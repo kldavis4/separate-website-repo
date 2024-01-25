@@ -16,7 +16,7 @@ export const config = defineConfig({
         label: "Page Content",
         name: "pages",
         format: "mdx",
-        path: "/",
+        path: "content",
         fields: [
           {
             name: "body",
@@ -28,7 +28,7 @@ export const config = defineConfig({
         ui: {
           router: ({ document }) => {
             if (document._sys.filename === "home") {
-              return `/`;
+              return `/home`;
             }
             return undefined;
           },
