@@ -5,7 +5,7 @@ export const config = defineConfig({
   token: process.env.TINA_TOKEN,
   branch: "main",
   // Relative to the _root_ of your repo
-  localContentPath: "../../demo-content-repo",
+  localContentPath: "../../content",
   build: {
     publicFolder: "public", // The public asset folder for your framework
     outputFolder: "admin", // within the public folder
